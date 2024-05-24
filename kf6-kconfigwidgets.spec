@@ -45,6 +45,7 @@ Requires:	kf6-kcoreaddons >= %{version}
 Requires:	kf6-kguiaddons >= %{version}
 Requires:	kf6-ki18n >= %{version}
 Requires:	kf6-kwidgetsaddons >= %{version}
+Obsoletes:	kf5-%{kfname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		qt6dir		%{_libdir}/qt6
@@ -65,6 +66,7 @@ Requires:	kf6-kcodecs-devel >= %{version}
 Requires:	kf6-kcolorscheme-devel >= %{version}
 Requires:	kf6-kconfig-devel >= %{version}
 Requires:	kf6-kwidgetsaddons-devel >= %{version}
+Obsoletes:	kf5-%{kfname}-devel < %{version}
 
 %description devel
 Header files for %{kfname} development.
