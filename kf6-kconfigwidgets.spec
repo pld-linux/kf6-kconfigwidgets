@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kconfigwidgets
 
 Summary:	Widgets for configuration dialogs
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	ec31a7ada5c5e504a99a2e3024c8638c
+# Source0-md5:	194fd4fa7dee5071ef6298c6572cf323
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
@@ -107,7 +107,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md
 %ghost %{_libdir}/libKF6ConfigWidgets.so.6
-%attr(755,root,root) %{_libdir}/libKF6ConfigWidgets.so.*.*
+%{_libdir}/libKF6ConfigWidgets.so.*.*
 %{_datadir}/qlogging-categories6/kconfigwidgets.categories
 %attr(755,root,root) %{qt6dir}/plugins/designer/kconfigwidgets6widgets.so
 %{_datadir}/qlogging-categories6/kconfigwidgets.renamecategories
