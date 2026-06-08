@@ -56,6 +56,11 @@ KConfigWidgets provides easy-to-use classes to create configuration
 dialogs, as well as a set of widgets which uses KConfig to store their
 settings.
 
+%description -l pl.UTF-8
+KConfigWidgets dostarcza łatwych w użyciu klas do tworzenia okienek
+dialogowych z konfiguracją, a także zestawu widżetów, które korzystają
+z KConfig to zapisywania swoich ustawień.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
